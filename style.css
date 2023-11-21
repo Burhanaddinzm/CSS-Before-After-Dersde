@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    color: #fff;
+    background-color: #3F3434;
+}
+
+.box{
+    width: 400px;
+    height: 300px;
+    background-color: #493E3E;
+    padding: 25px 35px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.box h1{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.box .bar-container{
+    display:grid;
+    grid-template-columns: repeat(5,50px);
+    text-align: center;
+    column-gap: 20px;
+}
+
+.box .bar-container .bar-area{
+    height: 150px;
+    background-color: #433737;
+    margin: 5px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box .bar-container .bar-percent{
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.box .bar-container .bar-age{
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.box .bar-container .bar-area::before{
+    content: "";
+    display: inline-block;
+    background-color: #D5634E;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.box .bar-container .b1::before{
+    height: 27.5%;
+}
+
+.box .bar-container .b2::before{
+    height: 33.5%;
+}
+
+.box .bar-container .b3::before{
+    height: 15.5%;
+}
+
+.box .bar-container .b4::before{
+    height: 12.5%;
+}
+
+.box .bar-container .b5::before{
+    height: 5.5%;
+}
+
